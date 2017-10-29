@@ -1,0 +1,14 @@
+/Include/
+/Lib/
+/Scripts/
+/node_modules/
+/dist/
+/.git/
+/.idea/
+/**/*.psd
+/**/Thumbs.db
+/**/*.DS_Store
+/app/libs
+pyvenv.cfg
+pip-selfcheck.json
+package-lock.json

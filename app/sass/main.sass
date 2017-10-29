@@ -1,0 +1,243 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "smartgrid"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
++reset
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+button
+  cursor: pointer
+
+.wrapper
+  +wrapper
+
+.wrapper-full
+  +wrapper-full
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.header
+  padding-top: 10px
+  padding-bottom: 10px
+  background-color: $gray
+  margin-bottom: 25px
+  .geo_choice
+    display: inline-block
+  .customer-block
+    float: right
+    +sm-block
+      float: none
+
+  .exit-button
+    margin-left: 20px
+
+.cta-composition
+  margin: 30px 0
+  .h1
+    text-align: center
+    font-size: 40px
+    font-weight: bold
+    text-transform: uppercase
+    +sm-block
+      font-size: 30px
+  .btn-center
+    margin: 0 auto
+    width: 50%
+
+.cta-form
+  +row-flex()
+  border: 3px solid $gray
+  padding: 10px
+  .label-zone
+    +col()
+    +size(2)
+    +size-sm(12)
+  .controls-zone
+    +col()
+    +size(10)
+    +size-sm(12)
+    .name-group
+      float: right
+      +sm-block
+        float: none
+        .name
+          display: block
+  button
+    margin-top: 30px
+
+
+.requests-composition
+  margin: 30px 0
+  .h2
+    font-weight: bold
+    font-size: 35px
+    text-align: center
+  .requests-controls
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    border-bottom: 1px solid $gray
+    padding-bottom: 10px
+    color: $gray
+    span
+      text-transform: lowercase
+    a
+      color: $gray
+
+.requests-item-section
+  padding-top: 10px
+  padding-bottom: 10px
+  border-bottom: 1px solid $gray
+  .name
+    display: block
+    margin-bottom: 5px
+  .head-row
+    display: inline
+    color: $gray
+    .bookmark
+      float: right
+      color: #ff3f4d
+    .bookmark .fa
+      padding-right: 10px
+  .bottom-row
+    display: inline-block
+    .views
+      padding-left: 10px
+
+.view-all-requests
+  margin: 25px
+  text-align: center
+
+
+
+.catalog-nav-composition
+  margin: 30px 0
+  width: 100%
+  text-align: center
+  ul
+    li
+      display: inline-block
+      padding-right: 10px
+
+.reviews-carousel
+  min-height: 100px
+  width: 50%
+  border: 2px solid $gray
+  margin: 0 auto
+  margin-top: 50px
+  +md-block
+    width: 90%
+  .item
+    padding: 12px
+    +row-flex
+    .carousel-image
+      +col
+      +size(3)
+      +size-sm(12)
+    .carousel-content
+      +col
+      +size(9)
+      +size-sm(12)
+      .carousel-content-head
+        font-size: 1.2rem
+        font-weight: bold
+
+.reviews-zone
+  position: relative
+  .send-response
+    position: absolute
+    top: 35px
+    right: 10px
+    +md-block
+      position: relative
+      text-align: center
+
+.slick-next:before, .slick-prev:before
+  color: $gray
+
+.footer
+  background-color: $gray
+  margin-top: 50px
+  .footer-head
+    padding: 20px 0
+    width: 100%
+    text-align: center
+  .h1
+    font-size: 35px
+    font-weight: bold
+  .items
+    +row-flex
+    .item
+      +col
+      +size(6)
+      +size-xs(12)
+    form
+      //display: inline-block
+      text-align: right
+      .group
+        white-space: nowrap
+      +xs-block
+        label, input, button
+          text-align: left
+          display: block
+  p
+    margin-bottom: 15px
+
+.logo-section
+  font-size: 50px
+  text-transform: uppercase
+  font-family: raleway
+  font-weight: 800
+
+.pagination
+  margin-top: 50px
+  justify-content: center
+
+//@import "media" // Всегда в конце

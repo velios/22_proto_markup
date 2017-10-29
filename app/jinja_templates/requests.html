@@ -1,0 +1,143 @@
+{% extends "_base.html" %}
+
+{% block title %}Заявки{% endblock %}
+
+{% block body %}
+<section class="main-section wrapper">
+
+<div class="logo-section">
+  Логотип
+</div>
+
+
+<!------------------------      Блок заявки  ------------------------>
+<div class="requests-composition">
+<!-------------------------------        Свежие заявки               -------------------------------->
+
+
+  <h2 class="h2">Заявки</h2>
+  <div class="requests-controls">
+    <div class="requests-section-choice">
+      <span>Раздел: <a href="#">Все <i class="fa fa-caret-down"></i></a></span>
+    </div>
+    <div class="requests-geo-choice">
+      <span>Регион: <a href="#">Новосибирск и область <i class="fa fa-caret-down"></i></a></span>
+    </div>
+  </div>
+
+  <!----------------------      Отдельные заявки           ------------------------------->
+  <div class="requests-item-section">
+    <div class="head-row">
+      <span class="datetime">вчера в 21:30</span>
+      <span class="bookmark"><i class="fa fa-star"></i>В закладки</span>
+    </div>
+    <div>
+      <span class="order">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</span>
+      <span class="name">Алексей</span>
+    </div>
+    <div class="bottom-row">
+        <button class="telephone btn btn-secondary btn-md">Показать телефон</button>
+        <span class="views">12 просмотров</span>
+    </div>
+  </div>
+
+
+  <div class="requests-item-section">
+    <div class="head-row">
+      <span class="datetime">вчера в 21:30</span>
+      <span class="bookmark"><i class="fa fa-star"></i>В закладки</span>
+    </div>
+    <div>
+      <span class="order">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</span>
+      <span class="name">Алексей</span>
+    </div>
+    <div class="bottom-row">
+        <button class="telephone btn btn-secondary btn-md">Показать телефон</button>
+        <span class="views">12 просмотров</span>
+    </div>
+  </div>
+  <div class="requests-item-section">
+    <div class="head-row">
+      <span class="datetime">вчера в 21:30</span>
+      <span class="bookmark"><i class="fa fa-star"></i>В закладки</span>
+    </div>
+    <div>
+      <span class="order">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</span>
+      <span class="name">Алексей</span>
+    </div>
+    <div class="bottom-row">
+        <button class="telephone btn btn-secondary btn-md">Показать телефон</button>
+        <span class="views">12 просмотров</span>
+    </div>
+  </div>
+  <div class="requests-item-section">
+    <div class="head-row">
+      <span class="datetime">вчера в 21:30</span>
+      <span class="bookmark"><i class="fa fa-star"></i>В закладки</span>
+    </div>
+    <div>
+      <span class="order">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</span>
+      <span class="name">Алексей</span>
+    </div>
+    <div class="bottom-row">
+        <button class="telephone btn btn-secondary btn-md">Показать телефон</button>
+        <span class="views">12 просмотров</span>
+    </div>
+  </div>
+  <div class="requests-item-section">
+    <div class="head-row">
+      <span class="datetime">вчера в 21:30</span>
+      <span class="bookmark"><i class="fa fa-star"></i>В закладки</span>
+    </div>
+    <div>
+      <span class="order">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</span>
+      <span class="name">Алексей</span>
+    </div>
+    <div class="bottom-row">
+        <button class="telephone btn btn-secondary btn-md">Показать телефон</button>
+        <span class="views">12 просмотров</span>
+    </div>
+  </div>
+  <div class="requests-item-section">
+    <div class="head-row">
+      <span class="datetime">вчера в 21:30</span>
+      <span class="bookmark"><i class="fa fa-star"></i>В закладки</span>
+    </div>
+    <div>
+      <span class="order">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</span>
+      <span class="name">Алексей</span>
+    </div>
+    <div class="bottom-row">
+        <button class="telephone btn btn-secondary btn-md">Показать телефон</button>
+        <span class="views">12 просмотров</span>
+    </div>
+  </div>
+
+  <!----------------   Показать еще       ---------------------->
+  <div class="view-all-requests">
+      <button class="btn btn-lg">Показать еще</button>
+  </div>
+
+  <!-------------------   Паджинатор ----------------->
+
+  <div class="pagination">
+     <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-caret-left"></i></a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">...10</a></li>
+        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-caret-right"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+</section>
+{% endblock %}
+
+{% block includes %}
+{{ super() }}
+{% endblock %}
