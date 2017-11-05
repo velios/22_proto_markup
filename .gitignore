@@ -12,3 +12,4 @@
 pyvenv.cfg
 pip-selfcheck.json
 package-lock.json
+_config.yml

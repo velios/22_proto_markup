@@ -43,6 +43,8 @@ const config = {
     html: {
         jinja: [dir.src + '/jinja_templates/**/*.html',
                 '!' + dir.src + '/jinja_templates/**/_*.*'], // не компилировать шаблоны начинающиеся с _*
+        jinja_static_folder: '/22_proto_markup/static/', // только для публикации на GitHub
+        //jinja_static_folder: 'static/', // раскоментировать для разработки на localhost
         dest: dir.dest + ''
     },
     img: {
@@ -117,7 +119,7 @@ gulp.task('sass', function() {
 gulp.task('jinja', function () {
   gulp.src(config.html.jinja)
     .pipe(nunjucks.compile({
-      static: '/22_proto_markup/static/'
+      static: config.html.jinja_static_folder
     }))
     .pipe(gulp.dest(dir.html))
 });
